@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    @apply antialiased bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+  }
+
+  /* Tabular numbers for all metrics */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom smooth pulse & water flow keyframes */
+@keyframes waterFlow {
+  0% { stroke-dashoffset: 24; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.animate-water-flow {
+  animation: waterFlow 1.2s linear infinite;
+}
+
+@keyframes rainFall {
+  0% { transform: translateY(-10px); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(30px); opacity: 0; }
+}
+
+.animate-rain-particle {
+  animation: rainFall 0.7s linear infinite;
+}

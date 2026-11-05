@@ -1,0 +1,6 @@
+{
+  "name": "Đô Thị Bọt Biển Tân Mỹ - Sponge City & Kinh Tế Tuần Hoàn",
+  "description": "Hệ thống mô phỏng giải pháp Đô thị Bọt biển Xanh và Kinh tế tuần hoàn tại Phường Tân Mỹ, TP.HCM: Chống ngập triều cường, khối Eco-Cell chịu lực từ rác nhựa và bảo trì Plug & Play.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
